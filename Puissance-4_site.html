@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Connect 4</title>
+	<link rel="stylesheet" type="text/css" href="Puissance-4_design.css">
+	<script src="Puissance-4_script.js"></script> 
+</head>
+<body onload="board()">
+
+<div class="OXO">
+	<h1>Playing Connect 4</h1>
+
+	<div class="aligned">
+		
+		<div>
+			<div id="full_grid">
+				
+			</div>
+			<div id="whose_turn">Game hasn't started. First, generate a board, then click on a box.</div>
+		</div>
+	
+
+
+		<div id="Grid_settings">
+			<h2>Grid settings</h2>
+			<div>
+				<p>Amount of rows wanted</p>
+				<input type="number" id="rows_wanted" min=3 value="6">
+			</div>
+			<div>
+				<p>Amount of columns wanted</p>
+				<input type="number" id="columns_wanted" min=3 value="7">
+			</div>
+			<div>
+				<p>Needed threshold to win</p>
+				<input type="number" id="threshold_wanted" min=1 value="4">
+			</div>
+			<button onclick="board()">Generate board</button>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
